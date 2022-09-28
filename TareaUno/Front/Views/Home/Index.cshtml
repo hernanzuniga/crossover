@@ -1,0 +1,23 @@
+﻿@*@model Front.Models.RepoGitHub*@
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        @foreach (var item in Model)
+        {
+            <div class="card w-50">
+                <div class="card-body">
+                    <h5 class="card-title">@item.name</h5>
+                    @foreach (var subItem in item.Content.Properties)
+                    {
+                        <p class="card-text">@subItem.Value</p>
+                    }
+                </div>
+            </div>
+        }
+
+
+    </div>
+</div>
