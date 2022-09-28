@@ -12,27 +12,6 @@ namespace Back.Controllers
 {
     public class AccesoController : ApiController
     {
-        //[HttpGet]
-        //public VM_Response HolaMundo()
-        //{
-        //    VM_Response vm = new VM_Response();
-        //    vm.Status = 1;
-        //    vm.Mensaje = "Hola Mundo";
-
-        //    return vm;
-        //}
-
-        //[HttpPost]
-        //public VM_Response ValidarUsuario([FromBody]VM_Usuario user)
-        //{
-        //    VM_Response vm = new VM_Response();
-        //    vm.Status = 1;
-        //    vm.Mensaje = "Hola Mundo";
-        //    vm.Resultado = user;
-
-        //    return vm;
-        //}
-
         [HttpPost]
         public VM_Response Valida(VM_Usuario user)
         {
@@ -74,46 +53,6 @@ namespace Back.Controllers
             }
             return vm;
         }
-
-        //[HttpPost]
-        //public IHttpActionResult Valida(VM_Usuario user)
-        //{
-        //    VM_Response vm = new VM_Response();
-        //    vm.Status = 1;
-        //    vm.Mensaje = "Hola Mundo";
-        //    vm.Resultado = user;
-
-        //    RespuestaServicio response = new RespuestaServicio();
-        //    try
-        //    {
-        //        var _apiUrl = "http://restapi.adequateshop.com/api/authaccount/login";
-
-        //        WebClient client = new WebClient();
-        //        client.Headers["Content-type"] = "application/json";
-        //        //client.Headers["User-Agent"] = "request";
-        //        client.Encoding = Encoding.UTF8;
-
-        //        dynamic data = new reqUser();
-        //        data.email = "nano@gmail.com";
-        //        data.password = 112233;
-
-        //        // convert to JSON
-        //        string json = Newtonsoft.Json.JsonConvert.SerializeObject(data);
-
-        //        //POST
-        //        string respuestaJson = client.UploadString(_apiUrl, json);
-
-        //        //GET
-        //        //string respuestaJson = client.DownloadString(url);
-
-        //        response = JsonConvert.DeserializeObject<RespuestaServicio>(respuestaJson);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        var error = ex.Message;
-        //    }
-        //    return Ok("éxito");
-        //}
     }
 
     public class reqUser

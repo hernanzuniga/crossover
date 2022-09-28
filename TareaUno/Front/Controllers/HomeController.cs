@@ -13,35 +13,7 @@ using System.Web.Script.Serialization;
 namespace Front.Controllers
 {
     public class HomeController : Controller
-    {
-        // GET: Home
-        //public async Task<ActionResult> Index2()
-        //{
-        //    List<RepoGitHub> listado = new List<RepoGitHub>();
-        //    using (var client = new HttpClient())
-        //    {
-        //        //Passing service base url
-        //        client.BaseAddress = new Uri("https://api.github.com/");
-        //        client.DefaultRequestHeaders.Clear();
-        //        //Define request data format
-        //        client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-        //        client.DefaultRequestHeaders.Add("User-Agent", "request");
-        //        //Sending request to find web api REST service resource GetAllEmployees using HttpClient
-        //        HttpResponseMessage Res = await client.GetAsync("users/blackmiaool/repos?per_page=10");
-        //        //Checking the response is successful or not which is sent using HttpClient
-        //        if (Res.IsSuccessStatusCode)
-        //        {
-        //            //Storing the response details recieved from web api
-        //            var EmpResponse = Res.Content.ReadAsStringAsync().Result;
-        //            //Deserializing the response recieved from web api and storing into the Employee list
-        //            listado = JsonConvert.DeserializeObject<List<RepoGitHub>>(EmpResponse);
-        //        }
-        //        //returning the employee list to view
-        //        return View(listado);
-        //    }
-        //}
-
-
+    {       
         public ActionResult Login()
         {
             return View();
